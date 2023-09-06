@@ -94,11 +94,6 @@ body {
     position: relative;
 }
 
-.rotating-image {
-    width: 200px; /* Ajuste o tamanho conforme necessário */
-    height: 200px; /* Ajuste o tamanho conforme necessário */
-    animation: rotate 4s linear infinite;
-}
 
 .btn-whatsapp a {
 
@@ -151,4 +146,84 @@ body {
    50%  { opacity:1; }
    100% { transform: scale(1.2); opacity:0; }
 
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .profile-photo img {
+        max-width: 80px;
+        height: auto;
+        
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+    .header h2 {
+        font-size: 10px;
+    }
+
+    .description img {
+        max-width: 30px;
+        height: auto;
+        margin-right: 5px;
+    }
+    .btn-whatsapp {
+        position: fixed;
+        right: 20px;
+        bottom: 20px; 
+        transform: scale(0.8);
+        width: 40px;
+        height: 40px;
+        line-height: 38px; 
+        font-size: 1.4em; 
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .profile-photo img {
+        max-width: 80px;
+        height: auto;
+        
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+    .header h2 {
+        font-size: 10px;
+    }
+
+    .description img {
+        max-width: 30px;
+        height: auto;
+        margin-right: 5px;
+    }
+    .btn-whatsapp {
+        position: fixed;
+        right: 20px;
+        bottom: 20px; 
+        transform: scale(0.8);
+        width: 40px;
+        height: 40px;
+        line-height: 38px; 
+        font-size: 1.4em; 
+    }
 }
