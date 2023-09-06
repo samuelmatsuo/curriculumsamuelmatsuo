@@ -209,6 +209,7 @@ footer {
         background-color: rgba(0, 0, 0, 0.7);
     }
 
+
     .profile-photo img {
         order: 2;
         max-width: 80px;
@@ -229,7 +230,7 @@ footer {
     }
     .btn-whatsapp {
         position: fixed;
-        right: 20px;
+        right: 10px;
         bottom: 20px; 
         transform: scale(0.8);
         width: 40px;
@@ -239,3 +240,26 @@ footer {
     }
 }
 
+@media screen and (max-width: 460px) {
+    
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo desejada */
+        color: #fff; /* Cor do texto desejada */
+        padding: 10px 0;
+        text-align: left;
+    }
+    
+    .btn-whatsapp {
+        position: fixed;
+        right: 10px;
+        bottom: 20px; 
+        transform: scale(0.8);
+        width: 40px;
+        height: 40px;
+        line-height: 38px; 
+        font-size: 1.4em; 
+    }
+}
